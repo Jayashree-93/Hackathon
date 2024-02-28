@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.TC003_ForEnterprise">
+        <methods>
+          <include name="clickCoursera"/>
+          <include name="jobDetails"/>
+          <include name="submitButton"/>
+          <include name="errorMessage"/>
+          <include name="setUp1"/>
+          <include name="personalDetails"/>
+          <include name="countryDetails"/>
+          <include name="institution"/>
+          <include name="clickEnterprise"/>
+          <include name="fillName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TC003_ForEnterprise -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
