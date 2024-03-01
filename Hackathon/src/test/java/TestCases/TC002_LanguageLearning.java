@@ -7,7 +7,7 @@ import TestBase.BaseClass;
 
 public class TC002_LanguageLearning extends BaseClass{
 	
-	@Test(priority=1,groups= {"sanity"})
+	@Test(priority=1,groups= {"smoke"})
 	public void keyActions() throws Exception
 	{
 		LanguageLearning lan=new LanguageLearning(driver);
@@ -24,7 +24,7 @@ public class TC002_LanguageLearning extends BaseClass{
 		lan.getLanguages();
 		BaseClass.getlogger().info("-----Successfully displayed the language details-----");
 	}
-	@Test(priority=3,groups= {"sanity"})
+	@Test(priority=3,groups= {"smoke"})
 	public void closeButton()
 	{
 		LanguageLearning lan=new LanguageLearning(driver);

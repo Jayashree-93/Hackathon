@@ -7,13 +7,13 @@ import TestBase.BaseClass;
 
 public class TC003_ForEnterprise extends BaseClass{
 	
-	@Test(priority=1,groups= {"sanity"})
+	@Test(priority=1,groups= {"smoke"})
 	public void homepage() throws Exception
 	{
 		ForEnterprise form= new ForEnterprise(driver);
 		form.homePage();
 	}
-	@Test(priority=2,groups= {"sanity"})
+	@Test(priority=2,groups= {"smoke"})
 	public void clickEnterprise()
 	{
 		ForEnterprise form= new ForEnterprise(driver);
@@ -30,7 +30,7 @@ public class TC003_ForEnterprise extends BaseClass{
 		Thread.sleep(2000);
 		BaseClass.getlogger().info("-----Clicked on the Coursera for campus-----");
 	}
-	@Test(priority=4,groups= {"sanity"})
+	@Test(priority=4,groups= {"smoke"})
 	public void scrollToForm()
 	{
 		ForEnterprise form= new ForEnterprise(driver);
@@ -86,7 +86,7 @@ public class TC003_ForEnterprise extends BaseClass{
 		Thread.sleep(3000);
 		BaseClass.getlogger().info("-----Clicked on the submit button-----");
 	}
-	@Test(priority=11,groups= {"sanity"})
+	@Test(priority=11,groups= {"smoke"})
 	public void errorMessage() throws Exception
 	{
 		ForEnterprise form= new ForEnterprise(driver);

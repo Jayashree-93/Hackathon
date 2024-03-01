@@ -7,7 +7,7 @@ import TestBase.BaseClass;
 
 public class TC001_IdentifyCourses extends BaseClass{
 	
-	@Test(priority=1,groups= {"sanity"})
+	@Test(priority=1,groups= {"smoke"})
 	public void verifyInputBox() throws Exception
 	{
 		WebDevelopment wd = new WebDevelopment(driver);
