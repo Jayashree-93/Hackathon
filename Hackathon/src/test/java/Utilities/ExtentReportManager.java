@@ -96,7 +96,6 @@ public class ExtentReportManager implements ITestListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
- 
 	}
  
 }

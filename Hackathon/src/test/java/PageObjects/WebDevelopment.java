@@ -44,10 +44,10 @@ public class WebDevelopment extends BasePage{
 	@FindBy(xpath="//h3[starts-with(@class,'cds-CommonCard')]")
 	List<WebElement> course1;
 	
-	@FindBy(xpath="(//div[starts-with(@class,'cds-119 cds-Typography-base css-h')])[6]")
+	@FindBy(xpath="(//div[starts-with(@class,'cds-119 cds-Typography-base css-h')])[5]")
 	WebElement rating1;
 	
-	@FindBy(xpath="(//div[starts-with(@class,'cds-119 cds-Typography-base css-h')])[8]")
+	@FindBy(xpath="(//div[contains(text(),'months') or contains(text(),'Approx') or contains(text(),'week') or contains(text(),'hours')])[11]")
 	WebElement duration1;
 	
 	@FindBy(xpath="(//h3[starts-with(@class,'cds-CommonCard')])[2]")
@@ -56,10 +56,10 @@ public class WebDevelopment extends BasePage{
 //	@FindBy(xpath="//p[text()='Included with Coursera Plus']")
 //	WebElement scroll1;
 	
-	@FindBy(xpath="(//div[starts-with(@class,'cds-119 cds-Typography-base css-h')])[1]")
+	@FindBy(xpath="(//div[starts-with(@class,'cds-119 cds-Typography-base css-h')])[6]")
 	WebElement rating2;
 	
-	@FindBy(xpath="//div/div[starts-with(@class,'cds-119 css-1h')]")
+	@FindBy(xpath="(//div[contains(text(),'months') or contains(text(),'Approx') or contains(text(),'week') or contains(text(),'hours')])[11]")
 	WebElement duration2;
 	
 	public void inputBox() throws Exception

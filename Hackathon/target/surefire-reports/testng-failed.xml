@@ -9,26 +9,18 @@
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
-        <include name="sanity"/>
+        <include name="smoke"/>
         <include name="regression"/>
       </run>
     </groups>
     <classes>
-      <class name="TestCases.TC003_ForEnterprise">
+      <class name="TestCases.TC001_IdentifyCourses">
         <methods>
-          <include name="clickCoursera"/>
-          <include name="jobDetails"/>
-          <include name="submitButton"/>
-          <include name="errorMessage"/>
           <include name="setUp1"/>
-          <include name="personalDetails"/>
-          <include name="countryDetails"/>
-          <include name="institution"/>
-          <include name="clickEnterprise"/>
-          <include name="fillName"/>
+          <include name="verifyCourse"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.TC003_ForEnterprise -->
+      </class> <!-- TestCases.TC001_IdentifyCourses -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

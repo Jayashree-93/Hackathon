@@ -4,15 +4,6 @@
 <listeners>
 <listener class-name="Utilities.ExtentReportManager"></listener>
 </listeners>
-  <test thread-count="5" name="ChromeTest">
-  <parameter name="browser" value="chrome"></parameter>
-  <parameter name="os" value="windows"></parameter>
-    <classes>
-      <class name="TestCases.TC001_IdentifyCourses"/>
-      <class name="TestCases.TC002_LanguageLearning"/>
-      <class name="TestCases.TC003_ForEnterprise"/>
-    </classes>
-  </test> <!-- Test -->
   <test thread-count="5" name="EdgeTest">
   <parameter name="browser" value="edge"></parameter>
   <parameter name="os" value="windows"></parameter>
@@ -22,5 +13,13 @@
       <class name="TestCases.TC003_ForEnterprise"/>
     </classes>
   </test> <!-- Test -->
- 
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="os" value="windows"></parameter>
+    <classes>
+      <class name="TestCases.TC001_IdentifyCourses"/>
+      <class name="TestCases.TC002_LanguageLearning"/>
+      <class name="TestCases.TC003_ForEnterprise"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
